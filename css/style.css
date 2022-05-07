@@ -64,7 +64,7 @@ body{
   text-decoration: none;
   padding:.1rem 1rem;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: 0.25em;
   transition: all 0.2s;
   position: absolute;
   font-size: 1.3em;
@@ -321,7 +321,7 @@ html {
   font-size: 2rem;
   background-color:
     rgba(255, 255, 255, 0.51);
-  border-radius: 3px;
+  border-radius: .5em;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   display: grid;
@@ -336,8 +336,8 @@ html {
 .card_picture {
   height: 100%;
   width: 100%;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
 }
 
 .card_heading {
@@ -389,7 +389,7 @@ html {
 
 
 
-/* END skills section styles */
+/* END social link section styles */
 
 /* START skills section styles */
 
