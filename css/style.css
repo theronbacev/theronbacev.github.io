@@ -313,7 +313,7 @@ html {
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   display: grid;
-  grid-template-rows: 15vw min-content 1fr minmax(max-content, 0rem);
+  grid-template-rows: 15vw min-content 1fr minmax(max-content, 17rem);
   color: #262833;
 }
 
