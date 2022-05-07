@@ -78,6 +78,7 @@ body{
   margin-right: -50%;
   transform: translate(-50%, -50%);
   animation-name: fadeIn;
+  animation-duration: 4s;
 }
   
 .btn_primary:hover {
