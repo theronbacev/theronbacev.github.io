@@ -203,7 +203,7 @@ ul.borderXwidth a:hover:after {
   display: block;
   font-size: 60px;
   font-weight: 700;
-  letter-spacing: 1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   animation-name: moveinleft;
   animation-duration: 4s;
@@ -213,7 +213,7 @@ ul.borderXwidth a:hover:after {
   display: block;
   font-size: 25px;
   font-weight: 700;
-  letter-spacing: 1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   animation-name: moveinright;
   animation-duration: 4s;
