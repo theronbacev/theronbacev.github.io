@@ -6,6 +6,15 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+            (function() {
+                var css = document.createElement('link');
+                css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+                css.rel = 'stylesheet';
+                css.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(css);
+            })();
+        </script>
 
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
@@ -21,20 +30,40 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-form">Contact Me</a></li>
             </ul>
-        </nav> 
-            
-        <div class="text-box">
-            <div class="header-div">
-                <h1 class="header-primary">
-                    <span class="header-main">THERON BACEV</span>
-                    <span class="header-sub">WEB DEVELOPER</span>
-                </h1>
+        </nav>  
+        <div>
+            <!-- Simulate a smartphone / tablet -->
+            <div class="mobile-container">
+
+            <!-- Top Navigation Menu -->
+            <div class="nav-mobile">
+                <input type="checkbox" class="nav-mobile_checkbox" id="nav-mobile_checkbox">
+                <label for="nav-mobile_checkbox" class="nav-mobile_btn">
+                    <span class="nav-mobile_icon">&nbsp;</span>
+                </label>
+            <div class="nav-mobile_background">
             </div>
-            <div>
-                <a class="btn-primary" href="./resources/resume.pdf" download="theron-bacev-resume">
-                    <span class="margin-left-small">Resume</span></a>
-            </div>
+            <nav class="nav-mobile_nav" id="nav-mobile_nav">
+                <ul class="nav-mobile_list" id="nav-mobile_list">
+                    <li class="nav-mobile_item"><a href="#skills" class="nav-mobile_link">Skills</a></li>
+                    <li class="nav-mobile_item"><a href="#projects" class="nav-mobile_link">Projects</a></li>
+                    <li class="nav-mobile_item"><a href="#contact-form" class="nav-mobile_link">Contact Me</a></li>
+                </ul>
+            </nav>
         </div>
+        </div>
+        <div class="landing_container">
+                <div class="header-div">
+                    <h1 class="header-primary">
+                        <span class="header-main">THERON BACEV</span>
+                        <span class="header-sub">WEB DEVELOPER</span>
+                    </h1>
+                </div>
+                <div>
+                    <a class="btn-primary" href="./resources/Resume.pdf" download="theron-bacev-resume">
+                        <span class="margin-left-small">Resume</span></a>
+                </div>
+            </div>
     </header>
     
     <section id="skills" class="skills">
@@ -56,6 +85,7 @@
             </div>
         </div>
     </section>
+        
     <div id="projects"></div>
     <section class="projects">
         <div class="projects_container">
