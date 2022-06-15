@@ -190,7 +190,7 @@ ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
 .nav-mobile_nav {
   display: none;
   height: 100vh;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 15;
@@ -200,7 +200,7 @@ ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
 }
 
 .nav-mobile_list {
-  position: absolute;
+  position: relative;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
