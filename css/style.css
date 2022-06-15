@@ -6,7 +6,7 @@ body{
   font-family: sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.3;
   color: #ffffff;
   padding: 30px;
   margin: auto;
@@ -136,6 +136,135 @@ ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
 }
 /* END desktop nav styles */
 
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile_checkbox {
+  display: none;
+}
+
+.nav-mobile_checkbox:checked ~ .nav-mobile_background {
+  transform: scale(80);
+}
+
+.nav-mobile_checkbox:checked ~ .nav-mobile_nav {
+  display: block;
+  width: 100%;
+}
+
+.nav-mobile_checkbox:checked + .nav-mobile_btn .nav-mobile_icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.nav-mobile_checkbox:checked + .nav-mobile_btn .nav-mobile_icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.nav-mobile_checkbox:checked + .nav-mobile_btn .nav-mobile_icon {
+  background-color: transparent;
+}
+
+.nav-mobile_btn {
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 4rem;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.nav-mobile_background {
+  height: 8rem;
+  width: 100%;
+  position: absolute;
+  background-color: #262833;
+  z-index: 10;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-mobile_nav {
+  display: none;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 0;
+  animation: fade-in 0.5s;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-mobile_list {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  width: 100%;
+}
+
+.nav-mobile_item {
+  margin: 1rem;
+}
+
+.nav-mobile_link {
+  color: #fff;
+}
+
+.nav-mobile_link:link,
+.nav-mobile_link:link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-size: 220%;
+  transition: all 0.4s;
+}
+
+.nav-mobile_link:hover,
+.nav-mobile_link:active {
+  background-position: 100%;
+  transform: translateX(1rem);
+}
+
+.nav-mobile_icon {
+  position: relative;
+  margin-top: 2.2rem;
+}
+
+.nav-mobile_icon,
+.nav-mobile_icon::before,
+.nav-mobile_icon::after {
+  width: 3.3rem;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+
+.nav-mobile_icon::before,
+.nav-mobile_icon::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.nav-mobile_icon::before {
+  top: -1rem;
+}
+
+.nav-mobile_icon::after {
+  top: 1rem;
+}
+
+
 /* start of header style*/
 .header {
   height: 85vh;
@@ -147,25 +276,13 @@ ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
   position: relative;
 }
 
-.text-box{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-content: center;
+.landing_container {
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -25%);
-  width: auto;
-}
-
-.header-primary {
-  color: #fff;
-  transform: uppercase;
-}
-
-.header-ul {
-  grid-row: 2/3;
-  grid-column: 1/4;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
 }
 
 .btn {
