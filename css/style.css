@@ -63,7 +63,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem;
   z-index: 1;
   width: 100%;
   top: 0;
@@ -73,7 +72,7 @@ html {
   transition: background 0.5s;
 }
 
-.sticky {
+.navbg {
   position: absolute;
   top: 0;
   background: #262833;
@@ -88,8 +87,8 @@ html {
 
 .navigation_list a {
   color: #fff;
-  padding: 0.45rem;
-  margin-right: 2rem;
+  margin: 0px 10px;
+    padding: 10px 10px;
   text-decoration: none;
 }
 
@@ -102,37 +101,39 @@ html {
   font-size: 1.7rem;
 }
 
-ul.borderXwidth a:before,
-ul.borderXwidth a:after {
-  position: absolute;
-  opacity: 0;
-  width: 0%;
-  height: 2px;
-  content: "";
-  background: #fff;
-  transition: all 0.3s;
+ul.topBotomBordersIn a:before, ul.topBotomBordersIn a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
 }
 
-ul.borderXwidth a:before {
-  left: 0px;
-  top: 0px;
+ul.topBotomBordersIn a:before
+{
+    top: 0px;
+    transform: translateY(-10px);
 }
 
-ul.borderXwidth a:after {
-  right: 0px;
-  bottom: 0px;
+ul.topBotomBordersIn a:after
+{
+    bottom: 0px;
+    transform: translateY(10px);
 }
 
-ul.borderXwidth a:hover:before,
-ul.borderXwidth a:hover:after {
-  opacity: 1;
-  width: 100%;
+ul.topBotomBordersIn a:hover:before, ul.topBotomBordersIn a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .navigation-mobile_container {
   display: none;
 }
-
 /* END desktop nav styles */
 
 /* start of header style*/
@@ -162,7 +163,7 @@ ul.borderXwidth a:hover:after {
   transform: uppercase;
 }
 
-.header-div {
+.header-ul {
   grid-row: 2/3;
   grid-column: 1/4;
 }
@@ -578,8 +579,8 @@ label {
   .logo {
     margin-top: 1rem;
   }
-  ul.borderXwidth a:before,
-  ul.borderXwidth a:after {
+  ul.topLeftBorders a:before,
+  ul.topLeftBorders a:after {
     position: static;
   }
   .navigation {
@@ -610,4 +611,3 @@ label {
 }
 
 /*END media queries*/
-
