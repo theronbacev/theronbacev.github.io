@@ -6,16 +6,6 @@
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript">
-            (function() {
-                var css = document.createElement('link');
-                css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-                css.rel = 'stylesheet';
-                css.type = 'text/css';
-                document.getElementsByTagName('head')[0].appendChild(css);
-            })();
-        </script>
-
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -24,35 +14,25 @@
 </head>
 <body>
     <header class="header" id="home">
-        <nav class="navigation navbg" id="navigation">
-            <ul class="navigation_list topBotomBordersIn">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-form">Contact Me</a></li>
-            </ul>
-        </nav>  
-        <div>
-            <!-- Simulate a smartphone / tablet -->
-            <div class="mobile-container">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-            <!-- Top Navigation Menu -->
-            <div class="nav-mobile">
-                <input type="checkbox" class="nav-mobile_checkbox" id="nav-mobile_checkbox">
-                <label for="nav-mobile_checkbox" class="nav-mobile_btn">
-                    <span class="nav-mobile_icon">&nbsp;</span>
-                </label>
-            <div class="nav-mobile_background">
-            </div>
-            <nav class="nav-mobile_nav" id="nav-mobile_nav">
-                <ul class="nav-mobile_list" id="nav-mobile_list">
-                    <li class="nav-mobile_item"><a href="#skills" class="nav-mobile_link">Skills</a></li>
-                    <li class="nav-mobile_item"><a href="#projects" class="nav-mobile_link">Projects</a></li>
-                    <li class="nav-mobile_item"><a href="#contact-form" class="nav-mobile_link">Contact Me</a></li>
-                </ul>
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#home" class="navigation__link"><span>Home</a></li>
+                    <li class="navigation__item"><a href="#skills" class="navigation__link"><span>Skills</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link"><span>Projects</a></li>
+                    <li class="navigation__item"><a href="#contact-form" class="navigation__link"><span>Contact Me</a></li>
+                    </ul>
             </nav>
         </div>
-        </div>
+
         <div class="landing_container">
                 <div class="header-div">
                     <h1 class="header-primary">
@@ -162,6 +142,7 @@
             </div>
         </form>
     </section>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
 
