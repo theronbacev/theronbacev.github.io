@@ -1,31 +1,18 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-window.addEventListener("scroll",
-    function() {
-        let navArea = document.getElementById('navigation');
-        if (window.pageYOffset > 0) {
-            navArea.classList.add("navbg");
-        } else {
-            navArea.classList.remove("navbg");
-        }
-    });
+hamburger.addEventListener("click", mobileMenu);
 
-const windowWidth = window.matchMedia("(max-width: 550px)");
-windowWidth.addEventListener('change', function(mm) {
-    checkResponsiveWidth(windowWidth);
-});
-
-window.onload = (event) => {
-    const windowWidth = window.matchMedia("(max-width: 550px)");
-    checkResponsiveWidth(windowWidth);
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
 
-function checkResponsiveWidth(width) {
-    if (width.matches) {
-        document.getElementById('nav-mobile_list').addEventListener('click', function() {
-            const mobileNavCheckbox = document.getElementById('nav-mobile_checkbox');
-            if (mobileNavCheckbox.checked) {
-                mobileNavCheckbox.checked = false;
-            }
-        });
-    }
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
 }
