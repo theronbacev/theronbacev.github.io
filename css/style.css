@@ -104,15 +104,13 @@ a {
   position: absolute;
   z-index: 1;
   width: 100%;
-  top: 0;
   background-color: #262833b0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 550px) {
   .nav-menu {
       position: absolute;
-      left: 900%;
-      top:-600%;
+      top:-700%;
       flex-direction: column;
       background-color: #ffffff;
       width: 100%;
@@ -126,11 +124,10 @@ a {
       left: 0;
       padding-top: 50rem;
       padding-bottom: 50rem;
-      margin: auto;
   }
 
   .nav-item {
-      margin: 2.5rem 0;
+      margin: 2.5rem 2.5rem;
   }
 
   .hamburger {
